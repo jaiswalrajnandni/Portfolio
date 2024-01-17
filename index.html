@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajnandni Jaiswal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/59d5160fa5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#porject">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">          
+            <h1>Hi, I'm <br><span>Rajnandni</span> Jaiswal </h1>
+        </div>
+    </div>
+ </div>
+ <!-------------about---------------> 
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h3 class="sub-title">About Me</h3>
+                <h1>I'm a Developer</h1>
+                <p>Hello, I'm Rajnandni Jaiswal, a passionate and aspiring web developer ready to
+                   embark on a fulfilling journey in the IT sector. I recently post graduated with a 
+                   degree in MCA from Chhatrapati Shahu Ji Maharaj University Kanpur Uttar Pradesh, 
+                   where I honed my skills in web development and gained hands-on experience with 
+                   a variety of technologies.<br>
+                   My journey into the world of web development has been driven by a deep fascination
+                   with creating interactive and user-friendly digital experiences. During my 
+                   academic pursuits, I have successfully completed projects that demonstrate my 
+                   proficiency in PHP, HTML, CSS, JavaScript, Bootstrap and MySQL.<br>
+                   I am particularly excited about back-end development, and I am committed to 
+                   staying updated with the latest industry trends and best practices.
+                   What sets me apart is not just my technical skills but also my eagerness to take
+                   on challenges and continuously learn and grow.<br>
+                    I thrive in collaborative environments and am adept at turning concepts 
+                   into reality through clean,efficient, and maintainable code.
+                </p>
+            </div>
+        </div>
+    </div>
+ </div> 
+ <!------------------skills------------------->
+ <div id="skills">
+    <div class="container">
+        <h1 class="sub-title">Skills</h1>
+        <div class="skills-title">
+            <h1>Technologies I Know</h1>
+        <p>Discover the technologies I am proficient in and can bring to your project</p>
+        </div>
+        <div class="skills-list">
+            <div class="work">
+                <img src="images/php.png">
+            </div>
+            <div class="work">
+                <img src="images/mySQL.jpg">
+            </div>
+            <div class="work">
+                <img src="images/html.jpg">
+            </div>
+            <div class="work">
+                <img src="images/css.png">
+            </div>
+            <div class="work">
+                <img src="images/javascript.jpg">
+            </div>
+            <div class="work">
+                <img src="images/c.jpg">
+            </div>
+        </div>
+    </div>
+ </div>
+ <!--------------------portfolio--------------------->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/project1.png">
+                <div class="layer">
+                    <h3>Chat Application</h3>
+                    <p>A chat application makes it easy to communicate with people anywhere in the 
+                       world by sending and receiving messages in real time. 
+                    </p>
+                    <a href="https://github.com/jaiswalrajnandni/Chat_Application.git">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+                <h2>Chat Application</h2>
+            </div>
+            <div class="work">
+                <img src="images/project2.png">
+                <div class="layer">
+                    <h3>Restaurant Management System</h3>
+                    <p>I help restaurant administrator manage the restaurant business and help 
+                        the customer to see the menu and book the table.
+                    </p>
+                    <a href="https://github.com/jaiswalrajnandni/Love_Banaras_Restaurant.git">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+ <!-------------------contact---------------------->
+
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>rajnandnijaiswal101@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>7309956769</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/rajnandni-jaiswal-a126991aa"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/jaiswalrajnandni"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Developed with <i class="fa-solid fa-heart"></i> Rajnandni &copy; 2024</p>
+    </div>
+ </div>
+ <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+ </script> 
+ <script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+ </script>
+ <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzsO_pzHm-OqYsN5gJJP08UK7JPZ01jTfshjEuo5l-IfVePhLliIyh2M1sRHgq82HL3/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
