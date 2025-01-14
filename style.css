@@ -100,7 +100,10 @@ nav ul li a:hover::after{
 }
 .about-col-2 p{
     font-size: 16px;
-    margin-top: 40px;
+   
+}
+.about-raj{
+     margin-top: 40px;
 }
 .tab-titles{
     display: flex;
