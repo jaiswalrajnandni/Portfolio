@@ -410,3 +410,7 @@ nav .fa-solid{
     margin-top: -40px;
     display: block;
 }
+p {
+    line-height: 1.8; /* Adjust line spacing */
+    margin-bottom: 15px; /* Add space between paragraphs */
+}
